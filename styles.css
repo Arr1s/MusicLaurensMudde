@@ -1,0 +1,346 @@
+/* Algemeen: */
+/* De heer Walter heeft geholpen met deze scroll-behavior */
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, h2, h3, h5, blockquote {
+    margin: 4px;
+    padding: 4px;
+}
+
+
+h3 {
+    margin-top: 1em;
+}
+
+
+section h2 {
+    font-size:medium;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main ul {
+    margin: 4px;
+    padding: 4px;
+    text-decoration: none;
+}
+
+main li {
+    text-decoration: none;
+}
+
+main {
+    background-color: black;  
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 80px 30px 30px;  
+    
+}
+
+.socialmediacontent {
+    text-align: center;
+    padding: 20px;
+} 
+
+.socialmediacontent p {
+    padding-right: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.socialmediacontent h1 {
+    margin: 1em 0;
+}
+
+/* navigatie: */
+
+nav a {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    justify-content: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 14px 16px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    background-color: black;
+}
+
+/* Broter Bastiaan */
+
+nav li a:hover:not(.active) {
+    background-color: white;
+    color: black;
+    animation: fadeIn 2s;
+}
+
+article li a:hover {
+    background-color: black;
+    font-style: italic;
+}
+
+.active {
+    color: black;
+    background-color: white;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    
+}
+
+
+article ul li a {
+    text-decoration: none;
+    color: blue
+}
+
+article ul li a:hover {
+    color: purple;
+}
+
+article img {
+    width: 40%;
+    height: auto;
+    margin-right: 4%;
+}
+
+section img {
+    display:flex;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+} 
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: smaller;
+    border: solid white 2px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+ article p {
+    padding-right: 35%;
+} 
+
+section p {
+    margin-left: 1em;
+    font-style: italic;
+}
+
+ section p:first-of-type {
+    margin-left: 0%; 
+    font-style: normal;
+} 
+
+footer {
+    background-color: black;
+    padding: 1.5em;
+    border-top: solid 0.1em;
+    color: honeydew;
+    text-align: center;
+}
+
+footer p {
+    padding: 0.5em 6em;
+}
+
+footer a {
+    color: gray;
+    font-style: italic;
+}
+
+table {
+    width: 92%;
+}
+
+
+.flexbox p {
+    font-style: normal;
+    padding-right: 0;
+    margin-left: 0;
+}
+
+/* lyrics: */
+/* Docent internetstandaarden heeft geholpen, niet Walter maar de andere aardige man */
+
+summary {
+    margin: 3em;
+    font-style: normal;
+    transition-property: font-style;
+    transition: transform 0.3s;
+}
+
+summary:hover {
+    font-style: italic;
+    animation-name: translate;
+    animation-direction: normal;
+    transform: translate(1.5em);
+}
+
+@keyframes translate {
+    0% {
+        transform: translate(1em);
+    }
+    100% {
+        transform: translate(1.5em);
+    }
+}
+
+details [open] summary {
+    margin: 1em 1em 2em 1em;
+}
+
+.flexbox details p {
+    font-style: italic;
+}
+
+section p:last-of-type {
+    margin-bottom: 2em;
+} 
+
+article a img {
+    width: 100%;
+    background-color: black;
+    padding: 2em;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section:nth-child(4), section:nth-child(2) {
+    flex-flow: row-reverse;
+}
+
+main article section div,main article section figure {
+    width: 48%;
+} 
+
+#logo {
+    padding: 0;
+}
+
+/* Mijn beste vriend Jop */
+
+.homepage {
+    background-color: black;
+    background-image: url(../Images/homepage.jpeg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: absolute;
+    color: blue;
+}
+
+.homepage div {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.homepage div:first-of-type {
+    padding-bottom: 0.5em;
+    margin-right: 30%;
+    margin-bottom: 8%;
+}
+
+.homepage div:last-of-type {
+    padding: 0.5em;
+    margin-right: 15%;
+    margin-bottom: 0;
+    margin-top: 2em;
+}
+
+.homepage p {
+    padding-right: 0;
+}
+.socialmediacontent img {
+    width: 80%;
+    padding: 5em 0;
+}
+
+.socialmediacontent img:hover {
+    width: 77%;
+}
+
+.socialmediacontent div {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+iframe {
+    width:560px;
+    height:315px;
+    border:0;
+    margin-bottom: 3em;
+}
+
+h3:first-of-type {
+    margin-top: 0;
+}
+
+/* Bastiaan + bronnenlijst */
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1em;
+    font-style: italic;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid white;
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: .25em;
+  }
+
+hr {
+    margin-top: 0.5em;
+}
